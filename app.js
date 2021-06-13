@@ -21,7 +21,9 @@ app.use(express.static("public"));
 // let posts = [];
 
 // mongoose database connection
-mongoose.connect('mongodb://localhost:27017/posts', { useNewUrlParser: true, useUnifiedTopology: true });
+// mongoose.connect('mongodb://localhost:27017/posts', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://admin-sarthak:sarthak219@cluster0.zwgpe.mongodb.net/blogDB', { useNewUrlParser: true, useUnifiedTopology: true });
+
 
 //Post schema
 const postSchema = new mongoose.Schema({
